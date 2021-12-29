@@ -1,9 +1,9 @@
-const precioOriginal = 100;
-const descuento = 15;
+const precioOriginal = 120;
+const descuento = 18;
 
 const porcentajePrecioConDescuento = 100 - descuento;
 
-const precioConDescuento = (precioOriginal * porcentajePrecioConDescuento) / 4;
+const precioConDescuento = (precioOriginal * porcentajePrecioConDescuento) / 100;
 
 console.log({
     precioOriginal,
