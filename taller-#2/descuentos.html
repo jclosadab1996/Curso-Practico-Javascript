@@ -4,12 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Esta es una pagina web para aplicar descuentos a productos">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/image/js.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./descuentos.css">
     <title>Porcentajes y Descuentos</title>
 </head>
 <body>
-    <h1>
-        Porcentajes y Descuentos
-    </h1>
+    <header>
+        <h1>Descuento de productos</h1>
+    </header>
+    <div class="container">
+        <div class="discounts">
+            <div class="discounts-item">
+                <img src="/assets/image/product.webp" alt="Imagen del producto" width="120px">
+                <form>
+                    <label for="price">Ingresa el precio del producto</label>
+                    <input type="number" name="price" id="price" />
+                    <label for="discount">Ingresa el descuento del producto</label>
+                    <input type="number" name="discount" id="discount" />
+                    <button type="button" onclick="aplicarDescuento()">Calcular</button>
+                    <p id="priceWithDiscount" class="priceWithDiscount"></p>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="./descuentos.js"></script>
 </body>
 </html>

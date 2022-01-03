@@ -1,17 +1,13 @@
-//const precioOriginal = 120;
-//const descuento = 18;
+function aplicarDescuento(){
+    let precioInput = document.getElementById("price");
+    let precio = parseFloat(precioInput.value);
 
-function calcularPrecioConDescuento(precio, descuento){
-    const porcentajePrecioConDescuento = 100 - descuento;
-    const precioConDescuento = (precio * porcentajePrecioConDescuento) / 100;
-    return precioConDescuento;
+    let descuentoInput = document.getElementById("discount");
+    let descuento = parseFloat(descuentoInput.value);
+
+    let precioFinal = (precio * (100-descuento))/100;
+
+    const p = document.getElementById("priceWithDiscount");
+    p.innerText = `El precio final es: $${precioFinal}`;
 }
 
-
-
-//console.log({
-    //precioOriginal,
-   // descuento,
-   // porcentajePrecioConDescuento,
-    //precioConDescuento,
-//});
